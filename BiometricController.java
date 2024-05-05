@@ -41,7 +41,7 @@ import io.swagger.annotations.ApiResponses;
 @RestController
 @RequestMapping(value = "/rest/biometric")
 @CrossOrigin
-public class EnrollmentBiometricController {
+public class BiometricController {
 
 
 
