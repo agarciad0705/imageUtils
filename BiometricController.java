@@ -1,7 +1,5 @@
 package com.controller.rest;
 
-import static com.teknei.bid.service.validation.JsonValidation.validateJson;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -33,18 +31,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.machinezoo.sourceafis.FingerprintMatcher;
 import com.machinezoo.sourceafis.FingerprintTemplate;
-import com.teknei.bid.controller.rest.util.crypto.Decrypt;
-import com.teknei.bid.controller.rest.util.crypto.TokenUtils;
-import com.teknei.bid.dto.BiometricCaptureRequestIdentDTO;
-import com.teknei.bid.dto.BiometricCaptureRequestIdentToReceiveDTO;
-import com.teknei.bid.dto.CompareFacialRequestDTO;
-import com.teknei.bid.dto.DocumentPictureRequestDTO;
-import com.teknei.bid.dto.IneDetailDTO;
-import com.teknei.bid.dto.OperationResult;
-import com.teknei.bid.service.remote.BiometricClient;
-import com.teknei.bid.service.remote.FacialClient;
-import com.teknei.bid.service.remote.IdentificationClient;
-import com.teknei.bid.util.LogUtil;
+
 
 import feign.FeignException;
 import io.swagger.annotations.ApiOperation;
